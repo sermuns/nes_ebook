@@ -39,14 +39,14 @@ pub struct CPU {
  
 impl CPU {
    pub fn new() -> Self {
-       CPU {
+       Self {
            register_a: 0,
            status: 0,
            program_counter: 0,
        }
    }
  
-   pub fn interpret(&mut self, program: Vec<u8>) {
+   pub fn interpret(&mut self, program: &[u8]) {
        todo!("")
    }
 }
